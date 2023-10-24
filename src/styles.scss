@@ -1,4 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/theming';
+// /* You can add global styles to this file, and also import other style files */
+@include mat-core();
+
+$resto-app-primary: mat-palette($mat-pink);
+$resto-app-accent:  mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$resto-app-warn:    mat-palette($mat-red);
+//$my-primary: mat.define-palette(mat.$pink-palette, 500);
+// $my-accent: mat.define-palette(mat.$indigo-palette, A200, A100, A400);
+// // The "warn" palette is optional and defaults to red if not specified.
+// $my-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$resto-app-theme: mat-light-theme($resto-app-primary, $resto-app-accent, $resto-app-warn);
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@include angular-material-theme($resto-app-theme);
