@@ -1,6 +1,7 @@
-# 3dRestaurant
+# 3D Restaurant
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
+This project focuses on 3D Restaurant for online delivery and visually appealling of food items in 3D in your web/mobile/desktop.
 
 ## Development server
 
