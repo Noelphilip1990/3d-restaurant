@@ -18,7 +18,7 @@ import {MatDialog, MatDialogModule} from '@angular/material/dialog';
   declarations: [
     AppComponent,
     HomeComponent,
-    NavHeadingComponent
+    NavHeadingComponent,
   ],
   imports: [
     BrowserModule,

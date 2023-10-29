@@ -1,0 +1,11 @@
+.heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .close-icon {
+        position: relative;
+        bottom: 20px;
+        right: -6px;
+    }
+}
