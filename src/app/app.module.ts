@@ -13,12 +13,14 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavHeadingComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
