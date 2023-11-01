@@ -5,7 +5,20 @@
 
     .close-icon {
         position: relative;
-        bottom: 20px;
+        bottom: 10px;
         right: -6px;
+    }
+
+    .mat-dialog-title {
+        color: #383838;
+        font-family: 'Arial';
+        font-weight: 500;
+
+        span.sub {
+            color: #007536;
+            font-family: 'Arial';
+            font-weight: 500;
+            font-size: 18px;
+        }
     }
 }

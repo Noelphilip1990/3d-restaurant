@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { Component, Inject, OnInit } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import * as THREE from 'three';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-
 })
 export class HomeComponent implements OnInit {
 
@@ -16,11 +16,12 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openDialog() {
+  openDialog(title: string) {
     const dialogRef = this.dialog.open(DialogContentExampleDialog, {
       height: '100%',
       width: '100%',
-      panelClass: 'viewM'
+      panelClass: 'viewM',
+      data: { titleName: title },
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -37,4 +38,9 @@ export class HomeComponent implements OnInit {
   standalone: true,
   imports: [MatDialogModule, MatButtonModule, MatIconModule],
 })
-export class DialogContentExampleDialog {}
+export class DialogContentExampleDialog {
+
+  constructor(@Inject(MAT_DIALOG_DATA) public data: { titleName: string }) {
+    console.log(data);
+  }
+}

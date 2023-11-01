@@ -1,11 +1,13 @@
 
-<div class="heading-container"> <h2 mat-dialog-title>3D View Of: </h2>
-<button class="close-icon" mat-icon-button mat-dialog-close>
-    <mat-icon class="material-symbols-outlined">
-        disabled_by_default
-    </mat-icon>
-</button>
+<div class="heading-container"> 
+    <h2 mat-dialog-title>3D View: <span class="sub">{{data.titleName}}</span></h2>
+    <button class="close-icon" mat-icon-button mat-dialog-close>
+        <mat-icon class="material-symbols-outlined">
+            disabled_by_default
+        </mat-icon>
+    </button>
 </div>
+<hr>
 <mat-dialog-content class="mat-typography">
-    <h3></h3>
+   <canvas id="canvas-box"></canvas>
 </mat-dialog-content>
