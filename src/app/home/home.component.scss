@@ -11,3 +11,26 @@
     width: 550px !important;
     height: 300px !important;
   }
+
+  @media only screen and (max-width : 992px) {
+
+    mat-grid-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    mat-grid-tile {
+      position: relative;
+      width: 100% !important;
+      height: 300px;
+      left: 0px !important;
+
+      .mat-grid-tile-content {
+        position: relative;
+        width: 100% !important;
+      }
+
+    }
+
+    
+  }
