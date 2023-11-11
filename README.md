@@ -6,6 +6,8 @@ This project focuses on 3D Restaurant for online delivery and visually appeallin
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<img width="960" alt="image" src="https://github.com/Noelphilip1990/3d-restaurant/assets/24915546/e644a887-00b5-458c-925e-e7c30d609cd6">
+
 
 ## Code scaffolding
 
