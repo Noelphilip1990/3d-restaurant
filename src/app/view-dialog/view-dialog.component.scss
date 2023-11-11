@@ -9,6 +9,23 @@
         right: -6px;
     }
 
+    .d-icon {
+        position: relative;
+        top: 3px;
+        width: 22px;
+        height: 22px;
+    }
+
+    .d-icon svg {
+        animation: mymove 10s infinite;
+        transform: rotate(45deg); /* Equal to rotateZ(45deg) */
+    }
+
+    @keyframes mymove {
+        from { transform: rotate(45deg); }
+        to { transform: rotate(-180deg); }
+    }
+
     .mat-dialog-title {
         color: #383838;
         font-family: 'Arial';
