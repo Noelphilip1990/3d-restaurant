@@ -11,7 +11,7 @@ import * as THREE from 'three';
 })
 export class ViewDialogComponent implements OnInit {
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: { titleName: string }) {
+  constructor(@Inject(MAT_DIALOG_DATA) public data: { titleName: string, restaurantName: string }) {
     console.log(data);
    
   }

@@ -17,12 +17,12 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openDialog(title: string) {
+  openDialog(title: string, restaurant: string) {
     const dialogRef = this.dialog.open(ViewDialogComponent, {
       height: '100%',
       width: '100%',
       panelClass: 'viewM',
-      data: { titleName: title },
+      data: { titleName: title, restaurantName: restaurant },
     });
 
     dialogRef.afterClosed().subscribe(result => {
