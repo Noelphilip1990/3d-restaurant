@@ -11,6 +11,7 @@
   img {
     width: 550px !important;
     height: 300px !important;
+    cursor: pointer;
   }
 
   .mat-card-actions:last-child {
@@ -22,6 +23,7 @@
     img {
       width: 340px !important;
       height: 220px !important;
+      cursor: pointer;
     }
 
     mat-grid-list {
