@@ -12,6 +12,11 @@
     width: 550px !important;
     height: 300px !important;
     cursor: pointer;
+    cursor: url('/assets/images/3d-pointer.svg'), auto;
+  }
+
+  button.threeview {
+    cursor: url('/assets/images/3d-pointer.svg'), auto;
   }
 
   .mat-card-actions:last-child {
@@ -24,6 +29,7 @@
       width: 340px !important;
       height: 220px !important;
       cursor: pointer;
+      cursor: url('/assets/images/3d-pointer.svg'), auto;
     }
 
     mat-grid-list {
