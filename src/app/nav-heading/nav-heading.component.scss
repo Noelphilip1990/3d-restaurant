@@ -1,35 +1,8 @@
-
 .left-menus {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    gap: 10px;
-
- 
-
-    .icon-toggle {
-
-        svg path {
-            fill: white;
-            stroke: white;
-        }
-        
-        &.active {
-            svg path {
-                // fill: #FFE4D6;
-                // stroke: #FFE4D6;
-
-                fill: #FACBEA;
-                stroke: #FACBEA;
-               
-            }
-        }
-    }
-}
-
-.mat-slide-toggle {
-    position: relative;
-    top: -3px;
+    gap: 4px;
 }
 
 .heading-icon {

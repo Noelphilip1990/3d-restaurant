@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import {FormBuilder, FormGroup, Validators, FormsModule, ReactiveFormsModule} from '@angular/forms';
-
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,7 +13,6 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FooterComponent } from './footer/footer.component';
 import { ViewDialogComponent } from './view-dialog/view-dialog.component';
 
@@ -37,10 +34,7 @@ import { ViewDialogComponent } from './view-dialog/view-dialog.component';
     MatButtonModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    MatSlideToggleModule,
-    MatGridListModule,
-    FormsModule,
-    ReactiveFormsModule,
+    MatGridListModule
   ],
   providers: [MatDialog],
   bootstrap: [AppComponent]
