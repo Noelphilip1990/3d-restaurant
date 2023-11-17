@@ -8,8 +8,6 @@ import { Route, Router } from '@angular/router';
 })
 export class NavHeadingComponent implements OnInit {
 
-  public themeCheckM:boolean = false;
-
   constructor(private router: Router) { }
 
   ngOnInit(): void {
