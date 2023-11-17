@@ -11,6 +11,7 @@ import { ViewDialogComponent  } from '../view-dialog/view-dialog.component';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  
 
   constructor(public dialog: MatDialog) { }
 
