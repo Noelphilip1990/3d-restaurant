@@ -19,6 +19,7 @@
             <mat-slide-toggle
                 class="example-margin"
                 [(ngModel)]="themeCheckM"
+                (change)="addTheme()"
                 color="accent">
             </mat-slide-toggle>
             <span class="icon-toggle" [ngClass]="{'active' : themeCheckM }">

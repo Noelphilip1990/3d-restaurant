@@ -1,3 +1,8 @@
+:root {
+    --bg-color: #ffffff;
+    --font-color: black;
+ } // we can also define variables with JavaScript
+
 
 @import '@angular/material/theming';
 // /* You can add global styles to this file, and also import other style files */
@@ -28,4 +33,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     .mat-dialog-container {
         padding: 0.8rem 2rem  0.8rem  1rem !important;
     }
- } 
+ }
+  
+  
+body {
+    background-color: var(--bg-color) !important;
+}

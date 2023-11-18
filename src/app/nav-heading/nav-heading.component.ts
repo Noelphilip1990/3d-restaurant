@@ -15,6 +15,16 @@ export class NavHeadingComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addTheme() {
+    if (this.themeCheckM) {
+      document.documentElement.style.setProperty('--bg-color', '#272727');
+      document.documentElement.style.setProperty('--font-color', '#fff');
+    } else {
+      document.documentElement.style.setProperty('--bg-color', '#ffffff');
+      document.documentElement.style.setProperty('--font-color', '#000000');
+    }
+  }
+
   navLink(link: string) {
     this.router.navigateByUrl(link);
   }
