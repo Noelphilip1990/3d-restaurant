@@ -13,6 +13,7 @@ import { MatCommonModule } from '@angular/material/core';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
@@ -40,6 +41,7 @@ import { ViewDialogComponent } from './view-dialog/view-dialog.component';
     MatSlideToggleModule,
     MatGridListModule,
     FormsModule,
+    MatMenuModule,
     ReactiveFormsModule,
   ],
   providers: [MatDialog],
