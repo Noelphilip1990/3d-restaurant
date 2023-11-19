@@ -14,9 +14,10 @@
     border-radius: 5PX;
     position: RELATIVE;
     top: 2rem;
+    padding-top: 20px;
 
     h1 {
-      font-size: 30px;
+      font-size: 48px;
       font-weight: 500;
       color: #e91e63b0;
       font-family: 'Satisfy';
@@ -60,6 +61,10 @@
 
       .heading-section {
         width: 20rem !important;
+
+        h1 {
+          font-size: 30px;
+        }
       }
     }
 

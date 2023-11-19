@@ -16,9 +16,9 @@ import {MatButtonModule} from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FooterComponent } from './footer/footer.component';
 import { ViewDialogComponent } from './view-dialog/view-dialog.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
