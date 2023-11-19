@@ -1,3 +1,46 @@
+
+::ng-deep {
+    .mat-menu-panel {
+
+        &.lite {
+            background-color: #444444;
+            
+            span {
+                color: white;
+            }
+        }
+
+        &.dark {
+            background-color: white;
+            
+            span {
+                color: #444444;
+            }
+        }
+        
+        mat-icon {
+        
+            &.lite-pink {
+                color: #FACBEA;
+            }
+        
+            &.lite-white {
+                color: white;
+            }
+
+            &.dark-green {
+                color: #00963e;
+            }
+
+            &.dark-black {
+                color: #272727;
+            }
+
+        }
+        
+        }
+}
+
 .left-menus {
     display: flex;
     justify-content: flex-end;
@@ -10,3 +53,4 @@
     align-items: center;
     gap: 2px;
 }
+
