@@ -9,6 +9,10 @@
 }
 
 span.social a {
-    color: #003363 !important;
+    color: var(--font-color);
     text-decoration: none !important;
+}
+
+span {
+    color: var(--font-color);
 }

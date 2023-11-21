@@ -1,7 +1,76 @@
+
+::ng-deep {
+    .mat-menu-panel {
+
+        &.lite {
+            background-color: #444444;
+            
+            span {
+                color: white;
+            }
+        }
+
+        &.dark {
+            background-color: white;
+            
+            span {
+                color: #444444;
+            }
+        }
+        
+        mat-icon {
+        
+            &.lite-pink {
+                color: #FACBEA;
+            }
+        
+            &.lite-white {
+                color: white;
+            }
+
+            &.dark-green {
+                color: #00963e;
+            }
+
+            &.dark-black {
+                color: #272727;
+            }
+
+        }
+        
+        }
+}
+
 .left-menus {
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    gap: 4px;
+
+    
+    .icon-toggle {
+
+        svg path {
+            fill: white;
+            stroke: white;
+        }
+
+        &.active {
+            svg path {
+                // fill: #FFE4D6;
+                // stroke: #FFE4D6;
+
+                fill: #FACBEA;
+                stroke: #FACBEA;
+
+            }
+        }
+    }
+}
+
+.mat-slide-toggle {
+    position: relative;
+    top: -3px;
     gap: 4px;
 }
 
@@ -10,3 +79,4 @@
     align-items: center;
     gap: 2px;
 }
+
