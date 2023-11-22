@@ -11,7 +11,9 @@
         from
         <span class="sub">{{data.restaurantName}}</span>
     </h2>
-    <button class="close-icon" mat-icon-button mat-dialog-close>
+    <button class="close-icon" mat-icon-button mat-dialog-close 
+        #tooltip="matTooltip"
+        matTooltip="Close View">
         <mat-icon class="material-symbols-outlined">
             cancel
         </mat-icon>
