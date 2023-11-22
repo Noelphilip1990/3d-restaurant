@@ -7,6 +7,15 @@
         position: relative;
         bottom: 10px;
         right: -6px;
+
+        &:hover {
+            animation: rotateicon 3s;
+            box-shadow: 0px 1px 1px 1px rgb(194 148 192 / 73);
+        }
+
+        @keyframes rotateicon {
+            100% {transform: rotate(-360deg);}
+        }
     }
 
     .d-icon {
