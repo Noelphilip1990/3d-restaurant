@@ -28,12 +28,20 @@
                 color: white;
             }
 
+            &.lite-desert {
+                color: #FAD5A5; 
+             }
+
             &.dark-green {
                 color: #00963e;
             }
 
             &.dark-black {
                 color: #272727;
+            }
+
+            &.dark-purple {
+                color: #3700b3;
             }
 
         }
@@ -49,6 +57,8 @@
 
     
     .icon-toggle {
+
+        cursor: pointer;
 
         svg path {
             fill: white;
