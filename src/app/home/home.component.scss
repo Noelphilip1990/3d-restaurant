@@ -54,6 +54,20 @@
     padding-bottom: 10px !important;
   }
 
+  .purchase-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 18px;
+  }
+
+  .think {
+    display: none;
+  }
+
+  .hover .think {
+    display: inline-block;
+  }
+
   @media only screen and (max-width : 992px) {
 
     .main-heading {
