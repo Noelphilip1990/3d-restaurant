@@ -12,6 +12,8 @@ import { ViewDialogComponent  } from '../view-dialog/view-dialog.component';
 })
 export class HomeComponent implements OnInit {
 
+  btnState: any = {};
+
   constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
@@ -28,6 +30,11 @@ export class HomeComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
+  }
+
+  addState(eve: any, index: number) {
+    console.log(eve);
+    this.btnState[index] = eve.type === 'mouseover' ? 'hover' : 'stable';
   }
 
 }

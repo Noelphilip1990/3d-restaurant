@@ -25,6 +25,17 @@
               <button mat-button>LIKE</button>
               <button class="threeview" mat-raised-button color="primary" (click)="openDialog('Onigiri Japanese Rice Balls', 'Raman Restaurant')">3D View</button>
               <button mat-button>SHARE</button>
+              <button id="addBtn" class="purchase-btn" mat-fab color="accent" aria-label="Purchase Button" [ngClass]="btnState[1]" (mouseover)="addState($event, 1)" (mouseout)="addState($event, 1)">
+                <mat-icon class="material-symbols-outlined">
+                  shopping_bag
+                </mat-icon>
+                <!-- <mat-icon class="material-symbols-outlined" >
+                  shopping_basket
+                </mat-icon> -->
+                <mat-icon class="material-symbols-outlined think">
+                  hourglass_top
+                </mat-icon>
+              </button>
             </mat-card-actions>
           </mat-card>
     </mat-grid-tile>
@@ -45,6 +56,17 @@
               <button mat-button>LIKE</button>
               <button class="threeview" mat-raised-button color="primary" (click)="openDialog('Noodles', 'Raman Restaurant')">3D View</button>
               <button mat-button>SHARE</button>
+              <button id="addBtn" class="purchase-btn" mat-fab color="accent" aria-label="Purchase Button" [ngClass]="btnState[2]" (mouseover)="addState($event, 2)" (mouseout)="addState($event, 2)">
+                  <mat-icon class="material-symbols-outlined">
+                    shopping_bag
+                  </mat-icon>
+                  <!-- <mat-icon class="material-symbols-outlined" >
+                    shopping_basket
+                  </mat-icon> -->
+                  <mat-icon class="material-symbols-outlined think">
+                    hourglass_top
+                  </mat-icon>
+              </button>
             </mat-card-actions>
           </mat-card>
     </mat-grid-tile>
